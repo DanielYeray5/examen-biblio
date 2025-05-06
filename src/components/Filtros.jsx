@@ -18,12 +18,7 @@
 
     return (
         <div className="mb-4">
-        <input
-            type="text"
-            placeholder="Buscar por título, autor o género"
-            value={filtro}
-            onChange={handleFiltroChange}
-            className="border p-2 w-full"
+        <input type="text" placeholder="Buscar por título, autor o género" value={filtro} onChange={handleFiltroChange} className="border p-2 w-full"
         />
         <ul className="space-y-2 mt-2">
             {librosFiltrados.map((libro) => (

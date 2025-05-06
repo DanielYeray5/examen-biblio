@@ -29,23 +29,12 @@
         <form onSubmit={handleSubmit} className="mb-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <input type="text" placeholder="Título" value={titulo} onChange={(e) => setTitulo(e.target.value)} className="border p-2" required />
+
             <input type="text" placeholder="Autor" value={autor} onChange={(e) => setAutor(e.target.value)} className="border p-2" required />
-            <input
-            type="text"
-            placeholder="Género"
-            value={genero}
-            onChange={(e) => setGenero(e.target.value)}
-            className="border p-2"
-            required
-            />
-            <input
-            type="number"
-            placeholder="Año"
-            value={anio}
-            onChange={(e) => setAnio(e.target.value)}
-            className="border p-2"
-            required
-            />
+
+            <input type="text" placeholder="Género" value={genero} onChange={(e) => setGenero(e.target.value)} className="border p-2" required />
+
+            <input type="number" placeholder="Año" value={anio} onChange={(e) => setAnio(e.target.value)} className="border p-2" required />
         </div>
         <button type="submit" className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
             Agregar Libro
